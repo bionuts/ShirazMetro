@@ -23,23 +23,203 @@
             android:paddingEnd="5dp"
             android:paddingStart="5dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingTop="10dp">
-
-            <ImageView
-                android:id="@+id/imageView445"
-                android:layout_width="0dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView445"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/action_settings"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/banner" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_height="2dp"
                 android:layout_weight="1"
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/action_settings"
-                app:srcCompat="@drawable/banner" />
-        </LinearLayout>
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:textDirection="rtl">
+
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="اخبار مترو" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@color/cardview_light_background"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:textDirection="rtl">
+
+                    <ImageView
+                        android:id="@+id/imageVdieddfdffdw4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/action_settings"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/flower" />
+
+                    <TextView
+                        android:id="@+id/textdfdfView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="بهره برداری از ایستگاه دستغیب"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textsdfView4dfdf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layoutDirection="rtl"
+                        android:text="دستغیب دستغیب دستغیب دستغیب دستغیب دستغیب دستغیب دستغیب دستغیب دستغیب دستغیب"
+                        android:textDirection="rtl" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.4"
+                        app:cardCornerRadius="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:textDirection="rtl">
+
+                            <ImageView
+                                android:id="@+id/imageVdiedfdw4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:contentDescription="@string/action_settings"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/flower" />
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="TextView" />
+
+                            <TextView
+                                android:id="@+id/textView4dfdf"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="TextView" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <ImageView
+                        android:id="@+id/imageVdiew4"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.4"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/action_settings"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/flower" />
+
+                    <ImageView
+                        android:id="@+id/imagdiew4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.4"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/action_settings"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/flower" />
+
+                    <ImageView
+                        android:id="@+id/imageV4rtdiew4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.4"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/action_settings"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/flower" />
+
+                    <ImageView
+                        android:id="@+id/imageVighew45"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.4"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/action_settings"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/flower" />
+
+                    <ImageView
+                        android:id="@+id/imageVighewdfg45"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0.4"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/action_settings"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/flower" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -54,8 +234,8 @@
                     android:layout_marginEnd="2dp"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
-                    android:scaleType="fitXY"
                     android:contentDescription="@string/action_settings"
+                    android:scaleType="fitXY"
                     app:srcCompat="@drawable/flower" />
 
                 <ImageView
@@ -119,8 +299,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
-                        android:scaleType="fitXY"
                         android:contentDescription="@string/action_settings"
+                        android:scaleType="fitXY"
                         app:srcCompat="@drawable/earch" />
                 </LinearLayout>
 
@@ -153,7 +333,6 @@
                 android:paddingTop="5dp">
 
 
-
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -166,10 +345,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
-                        android:scaleType="fitXY"
                         android:contentDescription="@string/action_settings"
+                        android:scaleType="fitXY"
                         app:srcCompat="@drawable/earch" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -181,22 +361,22 @@
                         android:id="@+id/imageView2d222"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1"
                         android:layout_marginBottom="2dp"
+                        android:layout_weight="1"
                         android:adjustViewBounds="true"
-                        android:scaleType="fitXY"
                         android:contentDescription="@string/action_settings"
+                        android:scaleType="fitXY"
                         app:srcCompat="@drawable/fun" />
 
                     <ImageView
                         android:id="@+id/imageView2f2222"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1"
                         android:layout_marginTop="2dp"
+                        android:layout_weight="1"
                         android:adjustViewBounds="true"
-                        android:scaleType="fitXY"
                         android:contentDescription="@string/action_settings"
+                        android:scaleType="fitXY"
                         app:srcCompat="@drawable/fun" />
 
 
@@ -255,4 +435,8 @@
         </LinearLayout>
 
     </ScrollView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </android.support.constraint.ConstraintLayout>
