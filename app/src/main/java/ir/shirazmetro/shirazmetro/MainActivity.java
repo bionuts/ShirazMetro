@@ -54,6 +54,16 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
+    /**
+     * Called when the button is clicked
+     */
+    public void onButton2Clicked(View view) {
+        // Do something in response to button click
+        // Toast.makeText(getApplicationContext(), "hello", Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
+        startActivity(intent);
+    }
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
