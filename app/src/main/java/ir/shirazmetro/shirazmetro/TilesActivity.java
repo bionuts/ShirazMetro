@@ -3,19 +3,22 @@ package ir.shirazmetro.shirazmetro;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.ArrayList;
+
 import android.os.Handler;
+
 import ir.shirazmetro.shirazmetro.applib.MySlideAdapter;
 import me.relex.circleindicator.CircleIndicator;
 
 public class TilesActivity extends AppCompatActivity {
 
-    private static ViewPager mPager;
+    private ViewPager mPager;
     private static int currentPage = 0;
-    private static final Integer[] XMEN = {R.drawable.fun, R.drawable.banner, R.drawable.earch, R.drawable.flower, R.drawable.fun};
-    private ArrayList<Integer> XMENArray = new ArrayList<Integer>();
+    private static final Integer[] XMEN = {R.drawable.train1, R.drawable.train2, R.drawable.train3, R.drawable.train4, R.drawable.train5};
+    private ArrayList<Integer> XMENArray = new ArrayList<>();
 
 
     @Override
@@ -29,8 +32,9 @@ public class TilesActivity extends AppCompatActivity {
         for (int i = 0; i < XMEN.length; i++)
             XMENArray.add(XMEN[i]);
 
-        mPager = (ViewPager) findViewById(R.id.slide1);
+        mPager = findViewById(R.id.slide1);
         mPager.setAdapter(new MySlideAdapter(TilesActivity.this, XMENArray));
+
         CircleIndicator indicator = (CircleIndicator) findViewById(R.id.indicator);
         indicator.setViewPager(mPager);
 
@@ -50,6 +54,6 @@ public class TilesActivity extends AppCompatActivity {
             public void run() {
                 handler.post(Update);
             }
-        }, 2500, 2500);
+        }, 5000, 3000);
     }
 }

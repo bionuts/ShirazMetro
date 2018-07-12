@@ -3,10 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <ImageView
-        android:id="@+id/image"
+        android:id="@+id/slideimage"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:adjustViewBounds="true"
-        android:src="@drawable/fun"
+        android:src="@drawable/train5"
         android:scaleType="fitXY"/>
 </FrameLayout>
