@@ -71,7 +71,7 @@
                     android:adjustViewBounds="true"
                     android:contentDescription="@string/action_settings"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/station7" />
+                    app:srcCompat="@drawable/sug1" />
 
                 <ImageView
                     android:id="@+id/imageVieddw2d22"
