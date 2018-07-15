@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Shimetro</string>
+    <string name="app_name">ShiMetro</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -13,6 +13,7 @@
 
     <string name="firsthome">خانه</string>
     <string name="settings">تنظیمات</string>
+    <string name="mapstab">نقشه</string>
 
     <string name="to_label">To:</string>
     <string name="email_hint">Enter email address</string>

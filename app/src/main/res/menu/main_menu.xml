@@ -7,6 +7,11 @@
         android:title="@string/firsthome" />
 
     <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/ic_menu_share"
+        android:title="@string/mapstab" />
+
+    <item
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="@string/title_dashboard" />

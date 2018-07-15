@@ -25,10 +25,10 @@ public class TilesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tiles);
-        init();
+        // init();
     }
 
-    private void init() {
+    /*private void init() {
         for (int i = 0; i < XMEN.length; i++)
             XMENArray.add(XMEN[i]);
 
@@ -55,5 +55,5 @@ public class TilesActivity extends AppCompatActivity {
                 handler.post(Update);
             }
         }, 5000, 3000);
-    }
+    }*/
 }
