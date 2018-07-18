@@ -1,5 +1,6 @@
 package ir.shirazmetro.shirazmetro;
 
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +15,7 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.MediaController;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
@@ -25,6 +27,7 @@ public class TilesActivity extends AppCompatActivity {
     private ViewPager mPager;
     VideoView video;
     private MediaController mc;
+    private TextView tv_lastestnews;
 
     Button btn_play;
     String videoPath;
@@ -44,6 +47,12 @@ public class TilesActivity extends AppCompatActivity {
 //        video = (VideoView) findViewById(R.id.videoView);
 //        video.setMediaController(mc);
 //        btn_play = (Button) findViewById(R.id.button3);
+
+        // Typeface tf2 = Typeface.createFromAsset(getAssets(), "fonts/ferdosi.ttf");
+
+//        tv_lastestnews = (TextView) findViewById(R.id.tv_latestnews);
+//        Typeface tf1 = Typeface.createFromAsset(getAssets(), "fonts/farnaz.ttf");
+//        tv_lastestnews.setTypeface(tf1);
     }
 
     public void PlayVideoOnClick(View v) {
