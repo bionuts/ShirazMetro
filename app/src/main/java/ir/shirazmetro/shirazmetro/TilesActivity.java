@@ -37,25 +37,25 @@ public class TilesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tiles);
-        // init();
+        init();
         if (mc == null) {
             mc = new MediaController(this);
         }
-        video = (VideoView) findViewById(R.id.videoView);
-        video.setMediaController(mc);
-        btn_play = (Button) findViewById(R.id.button3);
+//        video = (VideoView) findViewById(R.id.videoView);
+//        video.setMediaController(mc);
+//        btn_play = (Button) findViewById(R.id.button3);
     }
 
     public void PlayVideoOnClick(View v) {
-        Toast.makeText(this, "hello", Toast.LENGTH_SHORT);
-        videoPath = "android.resource://" + getPackageName() + "/" + R.raw.video;
-        Toast.makeText(this, videoPath, Toast.LENGTH_LONG);
-        Uri videoUri = Uri.parse(videoPath);
-        video.setVideoURI(videoUri);
-        video.start();
+//        Toast.makeText(this, "hello", Toast.LENGTH_SHORT);
+//        videoPath = "android.resource://" + getPackageName() + "/" + R.raw.video1;
+//        Toast.makeText(this, videoPath, Toast.LENGTH_LONG);
+//        Uri videoUri = Uri.parse(videoPath);
+//        video.setVideoURI(videoUri);
+//        video.start();
     }
 
-    /*private void init() {
+    private void init() {
         for (int i = 0; i < XMEN.length; i++)
             XMENArray.add(XMEN[i]);
 
@@ -82,5 +82,5 @@ public class TilesActivity extends AppCompatActivity {
                 handler.post(Update);
             }
         }, 5000, 3000);
-    }*/
+    }
 }
