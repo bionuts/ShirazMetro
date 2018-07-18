@@ -26,49 +26,57 @@
             android:orientation="vertical"
             android:padding="0dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@color/titlecolor"
-            android:padding="10dp">
-
-            <VideoView
-                android:id="@+id/videoView"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
-        </LinearLayout>
+                android:background="@color/titlecolor"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="PlayVideoOnClick"
+                    android:text="Button" />
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp" />
+            </LinearLayout>
 
             <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
 
-            <ImageView
-                android:id="@+id/imageViedw2d22"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="5dp"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/action_settings"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/userguide3" />
+                <ImageView
+                    android:id="@+id/imageViedw2d22"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/action_settings"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/userguide3" />
 
-            <ImageView
-                android:id="@+id/imageView2d22"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/action_settings"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/station2" />
+                <ImageView
+                    android:id="@+id/imageView2d22"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/action_settings"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/station2" />
 
-        </LinearLayout>
+            </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -78,9 +86,9 @@
                 <ImageView
                     android:id="@+id/imageVdiedw2d22"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:contentDescription="@string/action_settings"
                     android:scaleType="fitXY"
@@ -89,15 +97,16 @@
                 <ImageView
                     android:id="@+id/imageVieddw2d22"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_marginStart="5dp"
+                    android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:contentDescription="@string/action_settings"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/station8" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -107,9 +116,9 @@
                 <ImageView
                     android:id="@+id/imageVdddiedw2d22"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:contentDescription="@string/action_settings"
                     android:scaleType="fitXY"
@@ -118,9 +127,9 @@
                 <ImageView
                     android:id="@+id/imageVieddffdw2d22"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:layout_marginStart="5dp"
+                    android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:contentDescription="@string/action_settings"
                     android:scaleType="fitXY"
