@@ -48,11 +48,6 @@ public class TilesActivity extends AppCompatActivity {
 //        video.setMediaController(mc);
 //        btn_play = (Button) findViewById(R.id.button3);
 
-        // Typeface tf2 = Typeface.createFromAsset(getAssets(), "fonts/ferdosi.ttf");
-
-//        tv_lastestnews = (TextView) findViewById(R.id.tv_latestnews);
-//        Typeface tf1 = Typeface.createFromAsset(getAssets(), "fonts/farnaz.ttf");
-//        tv_lastestnews.setTypeface(tf1);
     }
 
     public void PlayVideoOnClick(View v) {
