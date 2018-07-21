@@ -677,7 +677,7 @@
                         android:adjustViewBounds="true"
                         android:contentDescription="@string/action_settings"
                         android:scaleType="fitXY"
-                        app:srcCompat="@drawable/station8" />
+                        app:srcCompat="@drawable/contact" />
 
                 </LinearLayout>
 
@@ -695,9 +695,513 @@
                         android:adjustViewBounds="true"
                         android:contentDescription="@string/action_settings"
                         android:scaleType="fitXY"
-                        app:srcCompat="@drawable/station8" />
+                        app:srcCompat="@drawable/gifts" />
 
                 </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- one page book -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/tv_onepage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/farnaz"
+                    android:layoutDirection="rtl"
+                    android:paddingStart="15dp"
+                    android:text="@string/onepagebook"
+                    android:textColor="@color/fifafontcolor"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/dashboard_header_font1"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardElevation="1dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/bgwhite"
+                                android:orientation="vertical"
+                                android:textDirection="rtl">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="110dp"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/action_settings"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/flower" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardElevation="1dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/bgwhite"
+                                android:orientation="vertical"
+                                android:textDirection="rtl">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="110dp"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/action_settings"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/flower" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardElevation="1dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/bgwhite"
+                                android:orientation="vertical"
+                                android:textDirection="rtl">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="110dp"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/action_settings"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/flower" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardElevation="1dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/bgwhite"
+                                android:orientation="vertical"
+                                android:textDirection="rtl">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="110dp"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/action_settings"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/flower" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <!-- intro book -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/tv_intropage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/farnaz"
+                    android:layoutDirection="rtl"
+                    android:paddingStart="15dp"
+                    android:text="@string/introbook"
+                    android:textColor="@color/fifafontcolor"
+                    android:textDirection="rtl"
+                    android:textSize="@dimen/dashboard_header_font1"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/ca45r34d1"
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/bgwhite"
+                                android:orientation="vertical"
+                                android:textDirection="rtl">
+
+                                <ImageView
+                                    android:id="@+id/imageVd7iedfdfdffdw4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="120dp"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/action_settings"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/flower" />
+
+                                <TextView
+                                    android:id="@+id/textd9fdfdView4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:gravity="right"
+                                    android:paddingEnd="8dp"
+                                    android:paddingStart="8dp"
+                                    android:text="بهره برداری ایستگاه"
+                                    android:textColor="@color/titlecolor"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/ca45r34d1"
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/bgwhite"
+                                android:orientation="vertical"
+                                android:textDirection="rtl">
+
+                                <ImageView
+                                    android:id="@+id/imageVd7iedfdfdffdw4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="120dp"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/action_settings"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/flower" />
+
+                                <TextView
+                                    android:id="@+id/textd9fdfdView4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:gravity="right"
+                                    android:paddingEnd="8dp"
+                                    android:paddingStart="8dp"
+                                    android:text="بهره برداری ایستگاه"
+                                    android:textColor="@color/titlecolor"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/ca45r34d1"
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/bgwhite"
+                                android:orientation="vertical"
+                                android:textDirection="rtl">
+
+                                <ImageView
+                                    android:id="@+id/imageVd7iedfdfdffdw4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="120dp"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/action_settings"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/flower" />
+
+                                <TextView
+                                    android:id="@+id/textd9fdfdView4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:gravity="right"
+                                    android:paddingEnd="8dp"
+                                    android:paddingStart="8dp"
+                                    android:text="بهره برداری ایستگاه"
+                                    android:textColor="@color/titlecolor"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/ca45r34d1"
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/bgwhite"
+                                android:orientation="vertical"
+                                android:textDirection="rtl">
+
+                                <ImageView
+                                    android:id="@+id/imageVd7iedfdfdffdw4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="120dp"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/action_settings"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/flower" />
+
+                                <TextView
+                                    android:id="@+id/textd9fdfdView4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:gravity="right"
+                                    android:paddingEnd="8dp"
+                                    android:paddingStart="8dp"
+                                    android:text="بهره برداری ایستگاه"
+                                    android:textColor="@color/titlecolor"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/ca45r34d1"
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/bgwhite"
+                                android:orientation="vertical"
+                                android:textDirection="rtl">
+
+                                <ImageView
+                                    android:id="@+id/imageVd7iedfdfdffdw4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="120dp"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/action_settings"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/flower" />
+
+                                <TextView
+                                    android:id="@+id/textd9fdfdView4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:gravity="right"
+                                    android:paddingEnd="8dp"
+                                    android:paddingStart="8dp"
+                                    android:text="بهره برداری ایستگاه"
+                                    android:textColor="@color/titlecolor"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/ca45r34d1"
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/bgwhite"
+                                android:orientation="vertical"
+                                android:textDirection="rtl">
+
+                                <ImageView
+                                    android:id="@+id/imageVd7iedfdfdffdw4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="120dp"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/action_settings"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/flower" />
+
+                                <TextView
+                                    android:id="@+id/textd9fdfdView4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:gravity="right"
+                                    android:paddingEnd="8dp"
+                                    android:paddingStart="8dp"
+                                    android:text="بهره برداری ایستگاه"
+                                    android:textColor="@color/titlecolor"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/ca45r34d1"
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/bgwhite"
+                                android:orientation="vertical"
+                                android:textDirection="rtl">
+
+                                <ImageView
+                                    android:id="@+id/imageVd7iedfdfdffdw4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="120dp"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/action_settings"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/flower" />
+
+                                <TextView
+                                    android:id="@+id/textd9fdfdView4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:gravity="right"
+                                    android:paddingEnd="8dp"
+                                    android:paddingStart="8dp"
+                                    android:text="بهره برداری ایستگاه"
+                                    android:textColor="@color/titlecolor"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/ca45r34d1"
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/bgwhite"
+                                android:orientation="vertical"
+                                android:textDirection="rtl">
+
+                                <ImageView
+                                    android:id="@+id/imageVd7iedfdfdffdw4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="120dp"
+                                    android:adjustViewBounds="true"
+                                    android:contentDescription="@string/action_settings"
+                                    android:scaleType="fitXY"
+                                    app:srcCompat="@drawable/flower" />
+
+                                <TextView
+                                    android:id="@+id/textd9fdfdView4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:gravity="right"
+                                    android:paddingEnd="8dp"
+                                    android:paddingStart="8dp"
+                                    android:text="بهره برداری ایستگاه"
+                                    android:textColor="@color/titlecolor"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
 
             </LinearLayout>
 
