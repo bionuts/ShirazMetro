@@ -15,6 +15,7 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.MediaController;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
@@ -28,6 +29,7 @@ public class TilesActivity extends AppCompatActivity {
     VideoView video;
     private MediaController mc;
     private TextView tv_lastestnews;
+    private ScrollView mainscroll;
 
     Button btn_play;
     String videoPath;
@@ -47,7 +49,9 @@ public class TilesActivity extends AppCompatActivity {
 //        video = (VideoView) findViewById(R.id.videoView);
 //        video.setMediaController(mc);
 //        btn_play = (Button) findViewById(R.id.button3);
-
+        mainscroll = (ScrollView) findViewById(R.id.scrollView2);
+        mainscroll.fullScroll(ScrollView.FOCUS_UP);
+        mainscroll.scrollTo(0, 0);
     }
 
     public void PlayVideoOnClick(View v) {
@@ -85,6 +89,6 @@ public class TilesActivity extends AppCompatActivity {
             public void run() {
                 handler.post(Update);
             }
-        }, 5000, 3000);
+        }, 5000, 10000);
     }
 }
