@@ -36,6 +36,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
+                    android:background="@drawable/nexttrippanel"
                     android:padding="20dp">
 
                     <LinearLayout
@@ -50,8 +51,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/iransansmobile_bold"
                             android:gravity="center"
-                            android:text="ایستگاه شهید دستغیب"
-                            android:textColor="@color/fifafontcolor"
+                            android:text="ایستگاه شهید آوینی"
+                            android:textColor="@color/bgwhite"
                             android:textDirection="rtl"
                             android:textSize="16sp" />
 
@@ -74,7 +75,7 @@
                                 android:fontFamily="@font/iransansmobile_bold"
                                 android:padding="2dp"
                                 android:text="10:55"
-                                android:textColor="@color/fifafontcolor"
+                                android:textColor="@color/bgwhite"
                                 android:textDirection="rtl"
                                 android:textSize="16sp" />
 
@@ -84,7 +85,7 @@
                                 android:fontFamily="@font/iransansmobile_bold"
                                 android:padding="2dp"
                                 android:text="10:57"
-                                android:textColor="@color/fifafontcolor"
+                                android:textColor="@color/bgwhite"
                                 android:textDirection="rtl"
                                 android:textSize="16sp" />
 
@@ -102,7 +103,7 @@
                                 android:fontFamily="@font/iransansmobile_medium"
                                 android:padding="2dp"
                                 android:text="به سمت پایانه دستغیب"
-                                android:textColor="@color/fifafontcolor"
+                                android:textColor="@color/bgwhite"
                                 android:textDirection="rtl"
                                 android:textSize="16sp" />
 
@@ -112,7 +113,7 @@
                                 android:fontFamily="@font/iransansmobile_medium"
                                 android:padding="2dp"
                                 android:text="به سمت پایانه احسان"
-                                android:textColor="@color/fifafontcolor"
+                                android:textColor="@color/bgwhite"
                                 android:textDirection="rtl"
                                 android:textSize="16sp" />
                         </LinearLayout>
