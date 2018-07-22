@@ -26,14 +26,18 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/bgwhite"
                     android:orientation="vertical"
-                    android:padding="0dp">
+                    android:paddingTop="20dp">
 
                     <android.support.v4.view.ViewPager
                         android:id="@+id/slide1"
@@ -60,18 +64,34 @@
                 android:orientation="vertical"
                 android:padding="3dp">
 
-                <TextView
-                    android:id="@+id/tv_latestnews1"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/farnaz"
                     android:layoutDirection="rtl"
-                    android:paddingStart="15dp"
-                    android:text="@string/latest_news"
-                    android:textColor="@color/fifafontcolor"
-                    android:textDirection="rtl"
-                    android:textSize="@dimen/dashboard_header_font1"
-                    android:textStyle="bold" />
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:adjustViewBounds="true"
+                        android:layout_marginStart="10dp"
+                        android:contentDescription="@string/action_settings"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/news2" />
+
+                    <TextView
+                        android:id="@+id/tv_latestnews1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/iransansmobile_bold"
+                        android:text="@string/latest_news"
+                        android:textColor="@color/fifafontcolor"
+                        android:textDirection="rtl"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
 
                 <HorizontalScrollView
                     android:layout_width="match_parent"
@@ -85,12 +105,10 @@
                         android:orientation="horizontal">
 
                         <android.support.v7.widget.CardView
-                            android:id="@+id/ca45r34d1"
                             android:layout_width="135dp"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            app:cardCornerRadius="5dp"
-                            app:cardElevation="5dp">
+                            app:cardCornerRadius="3dp">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -100,7 +118,6 @@
                                 android:textDirection="rtl">
 
                                 <ImageView
-                                    android:id="@+id/imageVd7iedfdfdffdw4"
                                     android:layout_width="match_parent"
                                     android:layout_height="120dp"
                                     android:adjustViewBounds="true"
@@ -109,16 +126,17 @@
                                     app:srcCompat="@drawable/flower" />
 
                                 <TextView
-                                    android:id="@+id/textd9fdfdView4"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="8dp"
                                     android:layout_marginTop="8dp"
+                                    android:fontFamily="@font/iransansmobile_ultralight"
                                     android:gravity="right"
                                     android:paddingEnd="8dp"
                                     android:paddingStart="8dp"
                                     android:text="بهره برداری ایستگاه"
                                     android:textColor="@color/titlecolor"
+                                    android:textSize="13sp"
                                     android:textStyle="bold" />
 
                             </LinearLayout>
@@ -425,37 +443,91 @@
                 android:orientation="horizontal"
                 android:padding="10dp">
 
-                <ImageView
-                    android:id="@+id/imageViedw2d22"
+                <android.support.v7.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="10dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:contentDescription="@string/action_settings"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/amar" />
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="1dp">
 
-                <ImageView
-                    android:id="@+id/imageViedw2ddd22"
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/bgwhite"
+                        android:orientation="vertical"
+                        android:padding="0dp"
+                        android:textDirection="rtl">
+
+                        <ImageView
+                            android:id="@+id/imageViedw2d22"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/action_settings"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/amar" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="10dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:contentDescription="@string/action_settings"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/usermanual1" />
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="1dp">
 
-                <ImageView
-                    android:id="@+id/imageVieddw2d22"
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/bgwhite"
+                        android:orientation="vertical"
+                        android:padding="0dp"
+                        android:textDirection="rtl">
+
+                        <ImageView
+                            android:id="@+id/imageViedw2ddd22"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/action_settings"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/usermanual1" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:contentDescription="@string/action_settings"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/stations" />
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/bgwhite"
+                        android:orientation="vertical"
+                        android:padding="0dp"
+                        android:textDirection="rtl">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/action_settings"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/stations" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
 
             </LinearLayout>
 
@@ -464,6 +536,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
+                android:background="#f2f2f2"
                 android:orientation="vertical"
                 android:padding="0dp">
 
@@ -471,7 +544,7 @@
                     android:id="@+id/tv_goodcitizen"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/farnaz"
+                    android:fontFamily="@font/iransansmobile_bold"
                     android:layoutDirection="rtl"
                     android:paddingStart="15dp"
                     android:text="@string/goodcitizen"
@@ -714,7 +787,7 @@
                     android:id="@+id/tv_onepage"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/farnaz"
+                    android:fontFamily="@font/iransansmobile_bold"
                     android:layoutDirection="rtl"
                     android:paddingStart="15dp"
                     android:text="@string/onepagebook"
@@ -952,7 +1025,7 @@
                     android:id="@+id/tv_intropage"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/farnaz"
+                    android:fontFamily="@font/iransansmobile_bold"
                     android:layoutDirection="rtl"
                     android:paddingStart="15dp"
                     android:text="@string/introbook"
