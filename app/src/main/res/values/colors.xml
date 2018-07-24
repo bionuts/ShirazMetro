@@ -33,5 +33,17 @@
     <color name="colorRed_900">#B71C1C</color>
     <!-- ./ 4th Gradient color -->
 
+    <color name="transparent">#00ffffff</color>
+    <color name="bgGradientStart">#000000</color>
+    <color name="bgGradientEnd">#d8000000</color>
+
+    <color name="bgSolidDark">#55000000</color>
+
+    <color name="headGradientStart">#00ffffff</color>
+    <color name="headGradientCenter">#00ffffff</color>
+    <color name="headGradientEnd">#96000000</color>
+
+    <color name="colorListDivider">#e6e6e6</color>
+
 
 </resources>

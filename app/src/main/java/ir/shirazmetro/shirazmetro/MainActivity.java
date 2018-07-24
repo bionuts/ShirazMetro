@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity
     public void onButton2Clicked(View view) {
         // Do something in response to button click
         // Toast.makeText(getApplicationContext(), "hello", Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
+        Intent intent = new Intent(getApplicationContext(), TripSchadule.class);
         startActivity(intent);
     }
 
