@@ -64,6 +64,14 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
+    /**
+     * Called when the button is clicked
+     */
+    public void onButton3Clicked(View view) {
+        Intent intent = new Intent(getApplicationContext(), ContactUsActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
