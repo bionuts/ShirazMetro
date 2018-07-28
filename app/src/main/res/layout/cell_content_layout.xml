@@ -146,17 +146,35 @@
         <!-- avatar and name part -->
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layoutDirection="rtl"
+            android:textDirection="rtl">
 
             <TextView
                 android:id="@+id/content_avatar_title"
-                style="@style/ContentMainBadgeTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_marginBottom="5dp"
-                android:text="@string/sender_badge" />
+                android:fontFamily="@font/iransansmobile"
+                android:text="عنوان"
+                android:textColor="@color/fifafontcolor"
+                android:textSize="15sp"
+                android:visibility="invisible" />
+
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/content_avatar_title"
+                android:ems="10"
+                android:fontFamily="@font/iransansmobile"
+                android:hint="عنوان پیشنهاد"
+                android:inputType="text" />
 
             <ImageView
                 android:id="@+id/content_avatar"
@@ -164,7 +182,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/content_avatar_title"
                 android:scaleType="centerCrop"
-                android:src="@drawable/avatar" />
+                android:src="@drawable/avatar"
+                android:visibility="invisible" />
 
             <TextView
                 android:id="@+id/content_name_view"
@@ -179,7 +198,9 @@
                 android:text="@string/client_name_mock"
                 android:textColor="@color/mainTextColor"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
 
             <ImageView
                 android:id="@+id/content_rating_stars"
@@ -188,7 +209,8 @@
                 android:layout_alignLeft="@id/content_name_view"
                 android:layout_alignStart="@id/content_name_view"
                 android:layout_below="@id/content_name_view"
-                android:src="@drawable/stars" />
+                android:src="@drawable/stars"
+                android:visibility="invisible" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -201,7 +223,8 @@
                 android:layout_toRightOf="@id/content_rating_stars"
                 android:text="@string/rating_mock"
                 android:textColor="@color/contentBadgeTitle"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:visibility="invisible" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -209,7 +232,8 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:src="@drawable/arrow" />
+                android:src="@drawable/arrow"
+                android:visibility="invisible" />
 
         </RelativeLayout>
 
@@ -229,184 +253,27 @@
             android:orientation="horizontal">
 
             <RelativeLayout
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1">
+                android:layoutDirection="rtl"
+                android:textDirection="rtl">
 
-                <TextView
-                    android:id="@+id/content_from_badge"
-                    style="@style/ContentMainBadgeTitle"
-                    android:layout_width="wrap_content"
+                <EditText
+                    android:id="@+id/editText22"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:text="@string/from_badge" />
-
-                <TextView
-                    android:id="@+id/content_from_address_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/content_from_badge"
-                    android:layout_alignStart="@id/content_from_badge"
-                    android:layout_below="@id/content_from_badge"
-                    android:text="@string/content_from1_mock"
-                    android:textColor="@color/mainTextColor"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/content_from_address_2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/content_from_address_1"
-                    android:layout_alignStart="@id/content_from_address_1"
-                    android:layout_below="@id/content_from_address_1"
-                    android:text="@string/content_from2_mock"
-                    android:textColor="@color/mainTextColor"
-                    android:textSize="14sp" />
-
+                    android:ems="8"
+                    android:fontFamily="@font/iransansmobile"
+                    android:gravity="top|start"
+                    android:hint="شرح پیشنهاد"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:maxLines="6"
+                    android:scrollbars="vertical" />
             </RelativeLayout>
 
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
-
-                <TextView
-                    android:id="@+id/content_to_badge"
-                    style="@style/ContentMainBadgeTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:text="@string/to_badge" />
-
-                <TextView
-                    android:id="@+id/content_to_address_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/content_to_badge"
-                    android:layout_alignStart="@id/content_to_badge"
-                    android:layout_below="@id/content_to_badge"
-                    android:text="@string/content_to1_mock"
-                    android:textColor="@color/mainTextColor"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/content_to_address_2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/content_to_address_1"
-                    android:layout_alignStart="@id/content_to_address_1"
-                    android:layout_below="@id/content_to_address_1"
-                    android:text="@string/content_to2_mock"
-                    android:textColor="@color/mainTextColor"
-                    android:textSize="14sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/arrow" />
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
-        <!-- divider line -->
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginBottom="6dp"
-            android:layout_marginTop="7dp"
-            android:src="@color/contentDividerLine" />
-
-        <!-- dates part -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:baselineAligned="false"
-            android:orientation="horizontal">
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
-
-                <TextView
-                    android:id="@+id/content_delivery_date_badge"
-                    style="@style/ContentMainBadgeTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:text="@string/delivery_date_badge" />
-
-                <TextView
-                    android:id="@+id/content_delivery_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/content_delivery_date_badge"
-                    android:layout_alignStart="@id/content_delivery_date_badge"
-                    android:layout_below="@id/content_delivery_date_badge"
-                    android:text="@string/delivery_time_mock"
-                    android:textColor="@color/mainTextColor"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/content_delivery_date"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/content_delivery_time"
-                    android:layout_alignStart="@id/content_delivery_time"
-                    android:layout_below="@id/content_delivery_time"
-                    android:text="@string/delivery_date_mock"
-                    android:textColor="@color/mainTextColor"
-                    android:textSize="14sp" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
-
-                <TextView
-                    android:id="@+id/content_deadline_badge"
-                    style="@style/ContentMainBadgeTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:text="@string/deadline_badge" />
-
-                <TextView
-                    android:id="@+id/content_deadline_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/content_deadline_badge"
-                    android:layout_alignStart="@id/content_deadline_badge"
-                    android:layout_below="@id/content_deadline_badge"
-                    android:text="@string/deadline_time_mock"
-                    android:textColor="@color/mainTextColor"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/content_deadline_date"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@id/content_deadline_time"
-                    android:layout_alignStart="@id/content_deadline_time"
-                    android:layout_below="@id/content_deadline_time"
-                    android:text=""
-                    android:textColor="@color/mainTextColor"
-                    android:textSize="14sp" />
-            </RelativeLayout>
 
         </LinearLayout>
 
@@ -418,20 +285,10 @@
             android:layout_marginTop="16dp"
             android:background="@color/btnRequest"
             android:padding="10dp"
-            android:text="Wineo"
+            android:text="ارسال"
             android:textAlignment="center"
             android:textColor="@color/mainTextColor"
             android:textSize="20sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="@string/btn_annotation_mock"
-            android:textAlignment="center"
-            android:textColor="@color/contentBadgeTitle"
-            android:textSize="12sp" />
-
     </LinearLayout>
 
 </LinearLayout>
