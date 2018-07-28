@@ -58,6 +58,6 @@
     <color name="btnRequest">#ffbf12</color>
 
     <color name="black_overlay">#66000000</color>
-
+    <color name="feedback_title_color">#594691</color>
 
 </resources>

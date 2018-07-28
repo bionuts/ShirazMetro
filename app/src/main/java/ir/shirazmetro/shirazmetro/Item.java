@@ -1,5 +1,6 @@
 package ir.shirazmetro.shirazmetro;
 
+import android.media.Image;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -17,13 +18,14 @@ public class Item {
     private int requestsCount;
     private String date;
     private String time;
+    private int leftImg;
 
     private View.OnClickListener requestBtnClickListener;
 
     public Item() {
     }
 
-    public Item(String price, String pledgePrice, String fromAddress, String toAddress, int requestsCount, String date, String time) {
+    public Item(String price, String pledgePrice, String fromAddress, String toAddress, int requestsCount, String date, String time, int leftImg) {
         this.price = price;
         this.pledgePrice = pledgePrice;
         this.fromAddress = fromAddress;
@@ -31,6 +33,15 @@ public class Item {
         this.requestsCount = requestsCount;
         this.date = date;
         this.time = time;
+        this.leftImg = leftImg;
+    }
+
+    public int getLeftImg() {
+        return leftImg;
+    }
+
+    public void setLeftImg(int leftImg) {
+        this.leftImg = leftImg;
     }
 
     public String getPrice() {
@@ -133,12 +144,11 @@ public class Item {
      * @return List of elements prepared for tests
      */
     public static ArrayList<Item> getTestingList() {
+
         ArrayList<Item> items = new ArrayList<>();
-        items.add(new Item("$14", "$270", "W 79th St, NY, 10024", "W 139th St, NY, 10030", 3, "TODAY", "05:10 PM"));
-        items.add(new Item("$23", "$116", "W 36th St, NY, 10015", "W 114th St, NY, 10037", 10, "TODAY", "11:10 AM"));
-        items.add(new Item("$63", "$350", "W 36th St, NY, 10029", "56th Ave, NY, 10041", 0, "TODAY", "07:11 PM"));
-        items.add(new Item("$19", "$150", "12th Ave, NY, 10012", "W 57th St, NY, 10048", 8, "TODAY", "4:15 AM"));
-        items.add(new Item("$5", "$300", "56th Ave, NY, 10041", "W 36th St, NY, 10029", 0, "TODAY", "06:15 PM"));
+        items.add(new Item("$14", "$270", "سیستم پیشنهادات مترو", "با نظرات سازنده خود ، مارا در ارائه خدمات بهتر یاری کنید", 3, "TODAY", "05:10 PM", R.drawable.idea2));
+        items.add(new Item("$23", "$116", "سیستم انتقادات مترو", "در جهت رفع مشکلات و پیگیری های متفرقه ، لطفا ما را در جریان بگذارید با تشکر", 10, "TODAY", "11:10 AM", R.drawable.problem1));
+        items.add(new Item("$63", "$350", "ارسال نظرات اپ", "به منظور ارتقا عملکرد اپ مترو ، لطفا نظرات خود را به تیم توسعه نرم افزار ارسال بفرمایید ، با تشکر", 0, "TODAY", "07:11 PM", R.drawable.app));
         return items;
 
     }
