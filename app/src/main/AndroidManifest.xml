@@ -39,6 +39,7 @@
         <activity
             android:name=".ContactUs2"
             android:screenOrientation="portrait" />
+        <activity android:name=".SuggestFormActivity" />
     </application>
 
 </manifest>
