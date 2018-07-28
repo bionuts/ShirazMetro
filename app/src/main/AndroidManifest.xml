@@ -35,7 +35,10 @@
         <activity
             android:name=".ContactUsActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".ContactUs2"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

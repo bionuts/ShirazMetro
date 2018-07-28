@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ContactUs2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@color/bgContent"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <!-- LEFT TITLE PART -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_weight="3"
+                android:background="@color/bgTitleLeft"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:id="@+id/left_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/action_settings"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/idea2" />
+
+                <TextView
+                    android:id="@+id/title_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/iransansmobile_medium"
+                    android:textColor="@android:color/white"
+                    android:textSize="26sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/title_time_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/title_date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/title_time_label"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+
+            </RelativeLayout>
+
+            <!-- RIGHT TITLE PART -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/bgTitleRight"
+                android:layoutDirection="rtl"
+                android:paddingBottom="20dp"
+                android:paddingEnd="20dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp"
+                android:paddingStart="15dp"
+                android:paddingTop="20dp"
+                android:textDirection="rtl">
+
+                <ImageView
+                    android:id="@+id/title_from_to_dots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/from_to_purple" />
+
+                <ImageView
+                    android:id="@+id/menu_icon_feedback"
+                    android:layout_width="35dp"
+                    android:layout_height="20dp"
+                    android:layout_alignTop="@+id/title_from_to_dots"
+                    android:layout_marginTop="-3dp"
+                    android:layout_toEndOf="@+id/title_from_to_dots"
+                    android:src="@drawable/menu1" />
+
+                <TextView
+                    android:id="@+id/title_from_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/title_from_to_dots"
+                    android:layout_marginTop="-5dp"
+                    android:layout_toEndOf="@+id/menu_icon_feedback"
+                    android:layout_toRightOf="@+id/menu_icon_feedback"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:fontFamily="@font/iransansmobile_medium"
+                    android:singleLine="true"
+                    android:text="سیستم پیشنهادات مترو"
+                    android:textColor="@color/feedback_title_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/title_from_to_dots_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/title_from_address"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toEndOf="@+id/title_from_to_dots"
+                    android:layout_toRightOf="@+id/title_from_to_dots"
+                    android:src="@color/contentDividerLine" />
+
+                <TextView
+                    android:id="@+id/title_to_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_from_to_dots_divider"
+                    android:layout_toEndOf="@id/title_from_to_dots"
+                    android:layout_toRightOf="@id/title_from_to_dots"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:fontFamily="@font/iransansmobile"
+                    android:text="با نظرات سازنده خود ، مارا در ارائه خدمات بهتر یاری کنید"
+                    android:textColor="@color/titlecolor"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@color/bgContent"
+
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <!-- LEFT TITLE PART -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_weight="3"
+                android:background="@color/bgTitleLeft"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:id="@+id/left_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/action_settings"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/problem1" />
+            </RelativeLayout>
+
+            <!-- RIGHT TITLE PART -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/bgTitleRight"
+                android:layoutDirection="rtl"
+                android:paddingBottom="20dp"
+                android:paddingEnd="20dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp"
+                android:paddingStart="15dp"
+                android:paddingTop="20dp"
+                android:textDirection="rtl">
+
+                <ImageView
+                    android:id="@+id/title_from_to_dots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/from_to_purple" />
+
+                <ImageView
+                    android:id="@+id/menu_icon_feedback"
+                    android:layout_width="35dp"
+                    android:layout_height="20dp"
+                    android:layout_alignTop="@+id/title_from_to_dots"
+                    android:layout_marginTop="-3dp"
+                    android:layout_toEndOf="@+id/title_from_to_dots"
+                    android:src="@drawable/menu1" />
+
+                <TextView
+                    android:id="@+id/title_from_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/title_from_to_dots"
+                    android:layout_marginTop="-5dp"
+                    android:layout_toEndOf="@+id/menu_icon_feedback"
+                    android:layout_toRightOf="@+id/menu_icon_feedback"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:fontFamily="@font/iransansmobile_medium"
+                    android:singleLine="true"
+                    android:text="سیستم انتقادات مترو"
+                    android:textColor="@color/feedback_title_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/title_from_to_dots_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/title_from_address"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toEndOf="@+id/title_from_to_dots"
+                    android:layout_toRightOf="@+id/title_from_to_dots"
+                    android:src="@color/contentDividerLine" />
+
+                <TextView
+                    android:id="@+id/title_to_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_from_to_dots_divider"
+                    android:layout_toEndOf="@id/title_from_to_dots"
+                    android:layout_toRightOf="@id/title_from_to_dots"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:fontFamily="@font/iransansmobile"
+                    android:text="در جهت رفع مشکلات و پیگیری های متفرقه ، لطفا ما را در جریان بگذارید با تشکر"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bgContent"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <!-- LEFT TITLE PART -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_weight="3"
+                android:background="@color/bgTitleLeft"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:id="@+id/left_image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/action_settings"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/app" />
+
+            </RelativeLayout>
+
+            <!-- RIGHT TITLE PART -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/bgTitleRight"
+                android:layoutDirection="rtl"
+                android:paddingBottom="20dp"
+                android:paddingEnd="20dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="20dp"
+                android:paddingStart="15dp"
+                android:paddingTop="20dp"
+                android:textDirection="rtl">
+
+                <ImageView
+                    android:id="@+id/title_from_to_dots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/from_to_purple" />
+
+                <ImageView
+                    android:id="@+id/menu_icon_feedback"
+                    android:layout_width="35dp"
+                    android:layout_height="20dp"
+                    android:layout_alignTop="@+id/title_from_to_dots"
+                    android:layout_marginTop="-3dp"
+                    android:layout_toEndOf="@+id/title_from_to_dots"
+                    android:src="@drawable/menu1" />
+
+                <TextView
+                    android:id="@+id/title_from_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/title_from_to_dots"
+                    android:layout_marginTop="-5dp"
+                    android:layout_toEndOf="@+id/menu_icon_feedback"
+                    android:layout_toRightOf="@+id/menu_icon_feedback"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:fontFamily="@font/iransansmobile_medium"
+                    android:singleLine="true"
+                    android:text="ارسال نظرات اپ"
+                    android:textColor="@color/feedback_title_color"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/title_from_to_dots_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/title_from_address"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toEndOf="@+id/title_from_to_dots"
+                    android:layout_toRightOf="@+id/title_from_to_dots"
+                    android:src="@color/contentDividerLine" />
+
+                <TextView
+                    android:id="@+id/title_to_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_from_to_dots_divider"
+                    android:layout_toEndOf="@id/title_from_to_dots"
+                    android:layout_toRightOf="@id/title_from_to_dots"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:fontFamily="@font/iransansmobile"
+                    android:text="به منظور ارتقا عملکرد اپ مترو ، لطفا نظرات خود را به تیم توسعه نرم افزار ارسال بفرمایید ، با تشکر"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
