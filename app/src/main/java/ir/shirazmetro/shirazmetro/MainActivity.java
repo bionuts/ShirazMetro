@@ -82,6 +82,11 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
+    public void onButton6Clicked(View view) {
+        Intent intent = new Intent(getApplicationContext(), ComplaintActivity.class);
+        startActivity(intent);
+    }
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

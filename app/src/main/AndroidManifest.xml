@@ -39,7 +39,10 @@
         <activity
             android:name=".ContactUs2"
             android:screenOrientation="portrait" />
-        <activity android:name=".SuggestFormActivity" />
+        <activity
+            android:name=".SuggestFormActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ComplaintActivity"></activity>
     </application>
 
 </manifest>

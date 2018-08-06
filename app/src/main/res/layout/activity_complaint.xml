@@ -10,10 +10,10 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ece6ff"
+        android:background="#ffe6e6"
         android:layoutDirection="rtl"
         android:textDirection="rtl"
-        tools:context=".SuggestFormActivity">
+        tools:context=".ComplaintActivity">
 
 
         <ImageView
@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:layout_margin="0dp"
-            android:background="#594691"
+            android:background="#914646"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -31,7 +31,7 @@
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_marginTop="45dp"
-            android:src="@drawable/idea2"
+            android:src="@drawable/problem1"
             app:civ_border_color="@color/bgwhite"
             app:civ_border_width="1dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +46,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/iransansmobile_medium"
-            android:text="عنوان پیشنهاد:"
+            android:text="عنوان انتقاد:"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/circularImageView" />
@@ -74,7 +74,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/iransansmobile_medium"
-            android:text="شرح پیشنهاد:"
+            android:text="شرح انتقاد:"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/editText2" />
@@ -88,12 +88,12 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:ems="10"
-            android:lines="5"
-            android:minLines="5"
             android:fontFamily="@font/iransansmobile"
             android:gravity="top|start"
             android:inputType="textMultiLine"
             android:labelFor="@id/textView4"
+            android:lines="5"
+            android:minLines="5"
             android:scrollbars="vertical"
             android:textDirection="rtl"
             android:verticalScrollbarPosition="left"
@@ -105,9 +105,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginTop="8dp"
             android:layout_marginStart="8dp"
-            android:background="#594691"
+            android:layout_marginTop="8dp"
+            android:background="#914646"
             android:fontFamily="@font/iransansmobile_bold"
             android:text="ارسال"
             android:textColor="@color/bgwhite"
