@@ -42,7 +42,8 @@
         <activity
             android:name=".SuggestFormActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".ComplaintActivity"></activity>
+        <activity android:name=".ComplaintActivity" />
+        <activity android:name=".AppImproveActivity"></activity>
     </application>
 
 </manifest>
