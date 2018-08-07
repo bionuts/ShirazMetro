@@ -10,7 +10,7 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#dcffd6"
+        android:background="#ebfcff"
         android:focusableInTouchMode="true"
         android:layoutDirection="rtl"
         android:textDirection="rtl"
@@ -20,24 +20,16 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="170dp"
             android:layout_margin="0dp"
-            android:background="#519146"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/bgmobile"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.mikhaellopez.circularimageview.CircularImageView
-            android:id="@+id/circularImageView"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_marginTop="45dp"
-            android:src="@drawable/app"
-            app:civ_border_color="@color/bgwhite"
-            app:civ_border_width="1dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
 
         <TextView
             android:id="@+id/textView4"
@@ -50,7 +42,7 @@
             android:text="ارائه پیشنهادات جهت بهتر شدن اپ مترو:"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/circularImageView" />
+            app:layout_constraintTop_toBottomOf="@id/imageView2" />
 
         <EditText
             android:id="@+id/editText3"
@@ -60,16 +52,16 @@
             android:layout_marginEnd="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
-            android:ems="5"
-            android:padding="5dp"
             android:background="@color/bgwhite"
-            android:hint="در این قسمت می توانید با ارائه پیشنهادات خود ، ما را در بهتر کردن امکانات اپ مترو همیاری کنید ، با تشکر"
+            android:ems="5"
             android:fontFamily="@font/iransansmobile"
             android:gravity="top|start"
+            android:hint="در این قسمت می توانید با ارائه پیشنهادات خود ، ما را در بهتر کردن امکانات اپ مترو همیاری کنید ، با تشکر"
             android:inputType="textMultiLine"
             android:labelFor="@id/textView4"
             android:lines="7"
             android:minLines="7"
+            android:padding="5dp"
             android:scrollbars="vertical"
             android:textDirection="rtl"
             android:verticalScrollbarPosition="left"
@@ -82,8 +74,8 @@
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:background="#519146"
+            android:layout_marginTop="12dp"
+            android:background="#55c5d7"
             android:fontFamily="@font/iransansmobile_bold"
             android:text="ارسال"
             android:textColor="@color/bgwhite"
